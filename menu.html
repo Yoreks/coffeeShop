@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <!--FontAwesome-->
+    <script src="https://kit.fontawesome.com/babee367b0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <!--Link Jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/jquery-3.1.0.min.js"></script><!--Usado en slider-->
+    <!--Link Hoja de JavaScript-->
+    <script src="js/script.js"></script>
+</head>
+<body>
+    
+    <!--Estructura Menu-->
+     <nav>
+        <div class="menu-icon">
+            <i class="fa fa-bars fa-2x"></i>
+        </div>
+  
+        <div class="logo1">
+            <a href="index.html"><img class="imgLog" src="img/logo.png" alt=""></a>
+        </div>
+  
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menú</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="express.html">Express</a></li>
+            </ul>
+        </div>
+  </nav> <!-- fin Estructura Menu-->
+
+  
+  <!-- Inicio Slider-->
+<div class="noMostrar">
+  <div class="slideshow">
+        <ul class="slider">
+            <li>
+                <img src="img/sli1.jpg" alt="">
+            </li>
+            <li>
+                <img src="img/sli2.jpg" alt="">
+            </li>
+            <li>
+                <img src="img/sli3.jpg" alt=""> 
+            </li>
+            <li>
+                <img src="img/sli4.jpg" alt="">
+            </li>
+        </ul>
+        
+        <ol class="pagination"></ol>
+
+        <div class="left">
+            <span class="fa fa-chevron-left"></span>
+        </div>
+    
+        <div class="right">
+            <span class="fa fa-chevron-right"></span>
+        </div>
+  
+  </div>
+</div>
+  <!--Fin slider-->
+
+  <!--Inicio Menu Lateral-->
+    <div id="navu" class="nav-menu">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a href="#espress" class="nav-link">
+          <svg class="svg-cupu" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="mug-hot" class="svg-inline--fa fa-mug-hot fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M127.1 146.5c1.3 7.7 8 13.5 16 13.5h16.5c9.8 0 17.6-8.5 16.3-18-3.8-28.2-16.4-54.2-36.6-74.7-14.4-14.7-23.6-33.3-26.4-53.5C111.8 5.9 105 0 96.8 0H80.4C70.6 0 63 8.5 64.1 18c3.9 31.9 18 61.3 40.6 84.4 12 12.2 19.7 27.5 22.4 44.1zm112 0c1.3 7.7 8 13.5 16 13.5h16.5c9.8 0 17.6-8.5 16.3-18-3.8-28.2-16.4-54.2-36.6-74.7-14.4-14.7-23.6-33.3-26.4-53.5C223.8 5.9 217 0 208.8 0h-16.4c-9.8 0-17.5 8.5-16.3 18 3.9 31.9 18 61.3 40.6 84.4 12 12.2 19.7 27.5 22.4 44.1zM400 192H32c-17.7 0-32 14.3-32 32v192c0 53 43 96 96 96h192c53 0 96-43 96-96h16c61.8 0 112-50.2 112-112s-50.2-112-112-112zm0 160h-16v-96h16c26.5 0 48 21.5 48 48s-21.5 48-48 48z"></path></svg>
+          <span class="link-text">Espressos</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a href="#new" class="nav-link">
+          <svg class="svg-cupu" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="award" class="svg-inline--fa fa-award fa-w-12" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M97.12 362.63c-8.69-8.69-4.16-6.24-25.12-11.85-9.51-2.55-17.87-7.45-25.43-13.32L1.2 448.7c-4.39 10.77 3.81 22.47 15.43 22.03l52.69-2.01L105.56 507c8 8.44 22.04 5.81 26.43-4.96l52.05-127.62c-10.84 6.04-22.87 9.58-35.31 9.58-19.5 0-37.82-7.59-51.61-21.37zM382.8 448.7l-45.37-111.24c-7.56 5.88-15.92 10.77-25.43 13.32-21.07 5.64-16.45 3.18-25.12 11.85-13.79 13.78-32.12 21.37-51.62 21.37-12.44 0-24.47-3.55-35.31-9.58L252 502.04c4.39 10.77 18.44 13.4 26.43 4.96l36.25-38.28 52.69 2.01c11.62.44 19.82-11.27 15.43-22.03zM263 340c15.28-15.55 17.03-14.21 38.79-20.14 13.89-3.79 24.75-14.84 28.47-28.98 7.48-28.4 5.54-24.97 25.95-45.75 10.17-10.35 14.14-25.44 10.42-39.58-7.47-28.38-7.48-24.42 0-52.83 3.72-14.14-.25-29.23-10.42-39.58-20.41-20.78-18.47-17.36-25.95-45.75-3.72-14.14-14.58-25.19-28.47-28.98-27.88-7.61-24.52-5.62-44.95-26.41-10.17-10.35-25-14.4-38.89-10.61-27.87 7.6-23.98 7.61-51.9 0-13.89-3.79-28.72.25-38.89 10.61-20.41 20.78-17.05 18.8-44.94 26.41-13.89 3.79-24.75 14.84-28.47 28.98-7.47 28.39-5.54 24.97-25.95 45.75-10.17 10.35-14.15 25.44-10.42 39.58 7.47 28.36 7.48 24.4 0 52.82-3.72 14.14.25 29.23 10.42 39.59 20.41 20.78 18.47 17.35 25.95 45.75 3.72 14.14 14.58 25.19 28.47 28.98C104.6 325.96 106.27 325 121 340c13.23 13.47 33.84 15.88 49.74 5.82a39.676 39.676 0 0 1 42.53 0c15.89 10.06 36.5 7.65 49.73-5.82zM97.66 175.96c0-53.03 42.24-96.02 94.34-96.02s94.34 42.99 94.34 96.02-42.24 96.02-94.34 96.02-94.34-42.99-94.34-96.02z"></path></svg>
+          <span class="link-text">New Stuff</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a href="#snack" class="nav-link">
+          <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="cookie-bite" class="svg-inline--fa fa-cookie-bite fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M510.52 255.82c-69.97-.85-126.47-57.69-126.47-127.86-70.17 0-127-56.49-127.86-126.45-27.26-4.14-55.13.3-79.72 12.82l-69.13 35.22a132.221 132.221 0 0 0-57.79 57.81l-35.1 68.88a132.645 132.645 0 0 0-12.82 80.95l12.08 76.27a132.521 132.521 0 0 0 37.16 72.96l54.77 54.76a132.036 132.036 0 0 0 72.71 37.06l76.71 12.15c27.51 4.36 55.7-.11 80.53-12.76l69.13-35.21a132.273 132.273 0 0 0 57.79-57.81l35.1-68.88c12.56-24.64 17.01-52.58 12.91-79.91zM176 368c-17.67 0-32-14.33-32-32s14.33-32 32-32 32 14.33 32 32-14.33 32-32 32zm32-160c-17.67 0-32-14.33-32-32s14.33-32 32-32 32 14.33 32 32-14.33 32-32 32zm160 128c-17.67 0-32-14.33-32-32s14.33-32 32-32 32 14.33 32 32-14.33 32-32 32z"></path></svg>
+          <span class="link-text">Snacks & Desserts</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a href="#summ" class="nav-link">
+          <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="umbrella-beach" class="svg-inline--fa fa-umbrella-beach fa-w-20" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M115.38 136.9l102.11 37.18c35.19-81.54 86.21-144.29 139-173.7-95.88-4.89-188.78 36.96-248.53 111.8-6.69 8.4-2.66 21.05 7.42 24.72zm132.25 48.16l238.48 86.83c35.76-121.38 18.7-231.66-42.63-253.98-7.4-2.7-15.13-4-23.09-4-58.02.01-128.27 69.17-172.76 171.15zM521.48 60.5c6.22 16.3 10.83 34.6 13.2 55.19 5.74 49.89-1.42 108.23-18.95 166.98l102.62 37.36c10.09 3.67 21.31-3.43 21.57-14.17 2.32-95.69-41.91-187.44-118.44-245.36zM560 447.98H321.06L386 269.5l-60.14-21.9-72.9 200.37H16c-8.84 0-16 7.16-16 16.01v32.01C0 504.83 7.16 512 16 512h544c8.84 0 16-7.17 16-16.01v-32.01c0-8.84-7.16-16-16-16z"></path></svg>
+          <span class="link-text">Summer Arrival</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="#brew" class="nav-link">
+          <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="filter" class="svg-inline--fa fa-filter fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M487.976 0H24.028C2.71 0-8.047 25.866 7.058 40.971L192 225.941V432c0 7.831 3.821 15.17 10.237 19.662l80 55.98C298.02 518.69 320 507.493 320 487.98V225.941l184.947-184.97C520.021 25.896 509.338 0 487.976 0z"></path></svg>
+          <span class="link-text">Brew & Methods</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a href="#tea" class="nav-link">
+          <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="cocktail" class="svg-inline--fa fa-cocktail fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M296 464h-56V338.78l168.74-168.73c15.52-15.52 4.53-42.05-17.42-42.05H24.68c-21.95 0-32.94 26.53-17.42 42.05L176 338.78V464h-56c-22.09 0-40 17.91-40 40 0 4.42 3.58 8 8 8h240c4.42 0 8-3.58 8-8 0-22.09-17.91-40-40-40zM432 0c-62.61 0-115.35 40.2-135.18 96h52.54c16.65-28.55 47.27-48 82.64-48 52.93 0 96 43.06 96 96s-43.07 96-96 96c-14.04 0-27.29-3.2-39.32-8.64l-35.26 35.26C379.23 279.92 404.59 288 432 288c79.53 0 144-64.47 144-144S511.53 0 432 0z"></path></svg>
+          <span class="link-text">Infusions & Tea</span>
+        </a>
+      </li>
+    </ul>
+</div> 
+    <!--Fin Menu Lateral-->
+
+    <!--Inicio Contenido Principal-->
+
+    <div id="wrapper2">
+
+         <!--Seccion Menu-->
+        <div id="menu">
+                <h1 id="espress">Menu</h1>
+
+                <!-- inicio seccion 1-->
+
+                <div class="seccion1">
+                    
+                    <div class="sec1izq">
+                        <img src="img/menu1.png">
+                    </div>
+
+
+                    <div class="sec1derecha">
+                        <h2>E S P R E S S O S</h2>
+                        <p>ESPRESSO .....................................$1.50</p>
+                        <p>DOUBLE ........................................$2.00</p>
+                        <p>CORTADO......................................$2.00</p>
+                        <p>CAPPUCCINO................................$3.00</p>
+                        <p>AMERICANO .................................$1.00</p>
+                        <p>LATTE ............................................$3.00</p>
+                    </div>
+                </div><!--fin seccion 1-->
+
+                <!-- inicio seccion 2-->
+
+                <div class="seccion2">
+                    <div class="seccion2-1">
+                        <img src="img/menu2.jpg" alt="menu2">
+                        <div class="hover-txt1">
+                            <h2>Espresso</h2>
+                            <h3>Preparado con:</h3>
+                            <ol>
+                                <li>7 g de café molido fino</li>
+                                <li>1 taza de agua</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div class="seccion2-2">
+                        <img src="img/menu3.jpg" alt="menu3">
+                        <div class="hover-txt1">
+                            <h2>Americano</h2>
+                            <h3>Preparado con:</h3>
+                            <ol>
+                                <li>Café molido</li>
+                                <li>1 litro de agua</li>
+                                <li>Azucar</li>
+                            </ol>                       
+                         </div>
+                    </div>
+
+                    <div class="seccion2-3">
+                        <img src="img/menu4.jpg" alt="menu4">
+                        <div class="hover-txt1">
+                             <h2>Double</h2>
+                            <h3>Preparado con:</h3>
+                            <ol>
+                                <li>Espresso doble </li>
+                                <li>Leche vaporizada </li>
+                            </ol>    
+                        </div>
+                    </div>
+
+                </div>
+                <!-- fin seccion 2-->
+                
+                <br>
+                <hr id="new" class="divisor1">
+
+                <!-- inicio seccion 3-->
+
+                <div class="seccion3">
+                    
+                    <div class="sec3izq">
+                        <h2>N E W  S T U F F</h2>
+                        <p>CARAMEL MACCHIATO.............................$4.50</p>
+                        <p>FLAT WHITE.................................................$3.50</p>
+                        <p>PEPPERMINT MOCCA................................$4.50</p>
+                        <p>TOFFEENUT LATTE.....................................$4.00</p>
+                        <p>VANILLA LATTE...........................................$3.00</p>
+                        
+                    </div>
+                
+                    <div class="sec3derecha">
+                        <img src="img/menu5.jpg">
+                    </div>
+                </div>
+
+                <!-- fin seccion 3-->
+
+
+                <!-- inicio seccion 4 (repite codigo seccion 2)-->
+
+                <div class="seccion2">
+                    <div class="seccion2-1">
+                        <img src="img/menu6.jpeg">
+                        <div class="hover-txt2">
+                            <h2>Flat wife</h2>
+                            <h3>Preparado con:</h3>
+                            <ol>
+                                <li>Café espresso </li>
+                                <li>Leche </li>
+                            </ol>  
+                        </div>
+                    </div>
+
+                    <div class="seccion2-2">
+                        <img src="img/menu7.jpg">
+                        <div class="hover-txt2">
+                            <h2>Tofenutt Late</h2>
+                            <h3>Preparado con:</h3>
+                           <ol>
+                                <li>Café espresso </li>
+                                <li>Leche </li>
+                                <li>Pasta de Caramelo y Nueces</li>
+                                <li>Nata líquida</li>
+                            </ol>                           
+                        </div>
+                    </div>
+
+                    <div class="seccion2-3">
+                        <img src="img/menu8.jpg">
+                        <div class="hover-txt2">
+                            <h2>Vainilla Late</h2>
+                            <h3>Preparado con:</h3>
+                           <ol>
+                                <li>3 Tazas de leche</li>
+                                <li>2 cucharaditas de vainilla</li>
+                                <li>Leche</li>
+                            </ol>  
+                        </div>
+                    </div>
+                </div>
+
+                <!-- fin seccion 4-->
+                <br>
+                <hr id="snack" class="divisor1">
+
+                <!-- inicio seccion 5-->
+
+                <div class="seccion1">
+                    
+                    <div class="sec1izq">
+                        <img src="img/menu9.jpeg">
+                    </div>
+
+                    <!-- inicio seccion 5-->
+
+                    <div class="sec5derecha">
+                        <h2>S N A C K S</h2>
+                        <p>MACAROONS............................................$6.00</p>
+                        <p>CHOCOLATE CHIP COOKIE ....................$1.50</p>
+                        <p>BAGEL .......................................................$2.00</p>
+                        <p>CROISSANT ...............................................$2.00</p>
+                        <p>YOGURT .....................................................$2.00</p>
+                        <p>LEMON PIE.................................................$4.50</p>
+                        <p>CHEESECAKE..............................................$4.00</p>
+                    </div>
+                </div>
+
+                <!-- fin seccion 5-->
+
+                 <!-- inicio seccion 6 (repite codigo seccion 2)-->
+
+                 <div class="seccion2">
+                    <div class="seccion2-1">
+                        <img src="img/menu10.jpeg">
+                        <div class="hover-txt3">
+                            <h2>Croissant</h2>
+                            <h3>Preparado con:</h3>
+                           <ol>
+                                <li>Levadura fresca</li>
+                                <li>Sal, azúcar</li>
+                                <li>Harina de fuerza o panaderia</li>
+                                <li>Agua tibia</li>
+                                <li>Mantequilla</li>
+                            </ol>  
+                        </div>
+                    </div>
+
+                    <div class="seccion2-2">
+                        <img src="img/menu11.jpeg">
+                        <div class="hover-txt3">
+                              <h2>Bagel</h2>
+                            <h3>Preparado con:</h3>
+                           <ol>
+                                <li>Harina de Trigo</li>
+                                <li>Agua</li>
+                                <li>Leche</li>
+                                <li>Levadura fresca</li>
+                                <li>Mantequilla, Sal y huevo</li>
+                            </ol>  
+                        </div>
+                    </div>
+
+                    <div class="seccion2-3">
+                        <img src="img/menu12.jpeg">
+                        <div class="hover-txt3">
+                            <h2>Lemon Pie</h2>
+                            <h3>Preparado con:</h3>
+                           <ol>
+                                <li>Galleta de Vainilla</li>
+                                <li>Mantequilla</li>
+                                <li>Leche condensada</li>
+                                <li>Huevo</li>
+                                <li>Limon</li>
+                            </ol>  
+                        </div>
+                    </div>
+                </div>
+
+                <!-- fin seccion 6-->
+
+                <br>
+                <hr id="summ" class="divisor1">
+
+                <!-- inicio seccion 7 (repite codigo de la seccion 3) --> 
+
+                <div class="seccion3">
+                    
+                    <div class="sec3izq">
+                        <h2>S U M M E R  A R R I V A L</h2>
+                        <p>COLD BREW TONIC...............................$2.50</p> 
+                        <p>ENDLESS SUMMER................................$3.00</p>
+                        <p>CASCARA LEMONADE...........................$3.00</p>
+                        <p>ICED TEA.................................................$2.00</p>
+                        <p>PIÑA COLADA.........................................$4.00</p>  
+                    </div>
+                
+                    <div class="sec3derecha">
+                        <img src="img/menu13.jpg">
+                    </div>
+                </div>
+
+                <!-- fin seccion 7-->
+
+                <!-- inicio seccion 8 (repite codigo seccion 2)-->
+
+                <div class="seccion2">
+                    <div class="seccion2-1">
+                        <img src="img/menu14.jpg">
+                        <div class="hover-txt4">
+                            <h2>Piña Colada</h2>
+                            <h3>Preparado con:</h3>
+                           <ol>
+                                <li>Piña</li>
+                                <li>Crema de Coco</li>
+                                <li>Ron Blanco (Opcional)</li>
+                                <li>Trozos de piña y cereza para decoracion</li>
+                            </ol>  
+                        </div>
+                    </div>
+
+                    <div class="seccion2-2">
+                        <img src="img/menu15.jpg">
+                        <div class="hover-txt4">
+                            <h2>Cold Brew Tonic</h2>
+                            <h3>Preparado con:</h3>
+                           <ol>
+                                <li>Cold brew coffe</li>
+                                <li>Agua quina</li>
+                                <li>Cáscara de mandarina</li>
+                                <li>Cubos de hielo</li>
+                                
+                            </ol>  
+                        </div>
+                    </div>
+
+                    <div class="seccion2-3">
+                        <img src="img/menu16.jpg">
+                        <div class="hover-txt4">
+                             <h2>Cascara Lemonade</h2>
+                            <h3>Preparado con:</h3>
+                           <ol>
+                                <li>Limon</li>
+                                <li>Miel</li>
+                                <li>Agua</li>
+                                <li>Cubos de hielo</li>
+                            </ol>  
+                        </div>
+                    </div>
+                </div>
+
+                <!-- fin seccion 8-->
+
+                <br>
+                <hr id="brew" class="divisor1">
+
+                
+                <!-- inicio seccion 9-->
+
+                 <div class="seccion1">
+                    
+                    <div class="sec1izq">
+                        <img src="img/menu18.jpg">
+                    </div>
+
+
+                    <div class="sec5derecha">
+                        <h2>B R E W </h2>
+                      <p>COLD BREW COFFEE..........................$4.00</p>
+                      <p>COLD BREW TEA..................................$3.00</p>
+                      <h2>METHODS</h2>
+                      <p>AEROPRESS...........................................$3.00</p>
+                      <p>V60...........................................................$3.00</p>
+                      <p>SYPHON.................................................$3.00
+                      </p>
+                    </div>
+                </div>
+
+                <!-- fin seccion 9-->
+
+                 <!-- inicio seccion 10 (repite codigo seccion 2)-->
+
+                 <div class="seccion2">
+                    <div class="seccion2-1">
+                        <img src="img/menu19.jpeg">
+                        <div class="hover-txt5">
+                            <h2>Cold Brew Coffee</h2>
+                            <h3>Preparado con:</h3>
+                           <ol>
+                                <li>Cafe en grano</li>
+                                <li>Agua o leche</li>
+                                <li>Azucar</li>
+                                <li>Hielo</li>
+                            </ol>  
+                        </div>
+                    </div>
+
+                    <div class="seccion2-2">
+                        <img src="img/menu20.jpeg">
+                        <div class="hover-txt5">
+                                <h2>Cold Brew Tea</h2>
+                            <h3>Preparado con:</h3>
+                           <ol>
+                                <li>Te en bolsa o de hojas</li>
+                                <li>Agua</li>
+                                <li>Complementos de decoracion</li>   
+                            </ol> 
+                        </div>
+                    </div>
+
+                    <div class="seccion2-3">
+                        <img src="img/menu25.jpeg">
+                        <div class="hover-txt5">
+                            <h2>Metodo V60</h2>
+                            <h3>Consiste en:</h3>
+                           <ol>
+                                <li>La tecnica V60 se compone simplemente de un cono y un filtro sobre la taza o jarra en la que se servirá el café. </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- fin seccion 10-->
+
+                <br>
+                <hr id="tea" class="divisor1">
+
+
+                <!-- inicio seccion 11 --> 
+
+                <div class="seccion11">
+                    
+                    <div class="sec11izq">
+                        <h2>I N F U S I O N S  &  T E A</h2>
+                        <p>WHITE SPIRULINA .........................$2.50</p>
+                        <p>GREEN CITRONELLA......................$2.00</p>
+                        <p>BLACK EARL GREY .........................$3.00</p>
+                        <p>INFUSION ........................................$2.50</p>
+                        <p>CHAI TEA..........................................$5.00</p>
+                        <p>MATCHA ..........................................$5.00</p>  
+                    </div>
+                
+                    <div class="sec3derecha">
+                        <img src="img/menu22.jpg">
+                        
+                    </div>
+                </div>
+
+                <!-- fin seccion 11-->
+
+                <!-- inicio seccion 12 (repite codigo seccion 2)-->
+
+                <div class="seccion2">
+                    <div class="seccion2-1">
+                        <img src="img/menu23.jpg">
+                        <div class="hover-txt6">
+                            <h2>Black Earl Grey</h2>
+                            <h3>Preparado con:</h3>
+                           <ol>
+                                <li>Hojas de té "Earl Grey Tea"</li>
+                                <li>Cúrcuma deshidratada</li>
+                                <li>Jengibre deshidratado</li>
+                                <li>Agua Hirviend</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div class="seccion2-2">
+                        <img src="img/menu24.jpeg">
+                        <div class="hover-txt6">
+                            <h2>Green Citronella</h2>
+                            <h3>Preparado con:</h3>
+                           <ol>
+                                <li>Te negro</li>
+                                <li>Limon</li>
+                                <li>Miel de azucar</li>
+                                <li>Agua</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div class="seccion2-3">
+                        <img src="img/menu25.jpg">
+                        <div class="hover-txt6">
+                              <h2>Infusion</h2>
+                            <h3>Preparado con:</h3>
+                           <ol>
+                                <li>Jengibre</li>
+                                <li>Menta</li>
+                                <li>Azucar</li>
+                                <li>Agua</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- fin seccion 12-->
+                
+
+        </div><!--fin seccion menu-->
+
+
+<!--INICIO FOOTER-->
+<div id="footer">
+                
+    <div id="footer1">
+        <a href="index.html"><img class="logofooter" src="img/logo.png" alt=""></a>
+    </div>
+    
+    <hr class="hr-movil">
+    <div id="footer2">
+        <h2>Horario</h2>
+        <p>
+            Lunes.......................8:00 - 17:00
+            Martes......................8:00 - 17:00
+            Miércoles.................8:00 - 17:00
+            Jueves......................8:00 - 17:00
+            Viernes.....................8:00 - 17:00
+            Sábado...................10:00 - 17:00
+            Domingo................10:00 - 17:00
+        </p>
+    </div>
+    <hr class="hr-movil">
+    
+    <div id="footer3">
+        <h2>Localización</h2>
+        <p>
+            100 mts. Este del Parque de Francia en Barrio Escalante.
+            Provincia de San José, Costa Rica.
+        </p>
+        <p>Derechos Reservados ©</p>
+    </div>
+    
+    <div id="footer4">
+        <h2>Contacto</h2>
+        <p>
+            Teléfono: 2222-0000
+            <br>
+                E-mail: coffeehouse@gmail.com
+        </p>
+        <div id="redes">
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+             <a href="https://www.instagram.com/"><i class="fab fa-instagram-square"></i></a>
+             <a href="https://web.whatsapp.com/"><i class="fab fa-whatsapp-square"></i></a>
+             <a href="https://twitter.com/home"><i class="fab fa-twitter-square"></i></a>
+         </div>
+    </div>
+    <hr class="hr-movil">
+
+    </div><!---fin footer-->
+
+
+
+</div><!--Fin Contenido Principal-->
+
+
+    
+</body>
+</html>
