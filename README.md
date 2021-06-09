@@ -1,2 +1,2 @@
-# coffeeShop
-Website focus on a Coffee Shop
+# Coffee Shop
+web page about a coffee shop
